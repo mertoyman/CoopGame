@@ -7,6 +7,7 @@
 #include "SWeapon_Instant.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -98,13 +99,21 @@ void ASCharacter::Tick(float DeltaTime)
 
 
 void ASCharacter::MoveForward(float Value)
-{
-	AddMovementInput(CameraComp->GetForwardVector() * Value);
+{	
+	FRotator Rotation = GetControlRotation();
+	Rotation.Roll = 0;
+	Rotation.Pitch = 0;
+	
+	AddMovementInput(UKismetMathLibrary::GetForwardVector(Rotation) * Value);
 }
 
 void ASCharacter::MoveRight(float Value)
 {
-	AddMovementInput(CameraComp->GetRightVector() * Value);
+	FRotator Rotation = GetControlRotation();
+	Rotation.Roll = 0;
+	Rotation.Pitch = 0;
+	
+	AddMovementInput(UKismetMathLibrary::GetRightVector(Rotation) * Value);
 }
 
 void ASCharacter::BeginCrouch()

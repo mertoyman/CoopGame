@@ -5,6 +5,7 @@
 
 
 #include "SWeapon_Instant.h"
+#include "Blueprint/UserWidget.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -12,9 +13,6 @@
 // Sets default values
 ASCharacter::ASCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
 	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComp"));
 	SpringArmComp->bUsePawnControlRotation = true;
 	SpringArmComp->SetupAttachment(RootComponent);
@@ -22,12 +20,13 @@ ASCharacter::ASCharacter()
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));	
 	CameraComp->SetupAttachment(SpringArmComp);
 
-    ACharacter::GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
-    ACharacter::GetMovementComponent()->GetNavAgentPropertiesRef().bCanJump = true;
-
+	CharacterMovementComp = GetCharacterMovement();
+	
+    CharacterMovementComp->GetNavAgentPropertiesRef().bCanCrouch = true;
+    CharacterMovementComp->GetNavAgentPropertiesRef().bCanJump = true;
+	
 	bWantsToFire = false;
 	bIsTargeting = false;
-	
 	
 	SocketName = "WeaponSocket";
 }
@@ -86,18 +85,6 @@ bool ASCharacter::IsEquipped() const
 	return bIsEquipped;
 }
 
-// Called every frame
-void ASCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	const float TargetFOV = bIsTargeting ? ZoomFOV : DefaultFOV;
-	const float NewFOV = FMath::FInterpTo(CameraComp->FieldOfView, TargetFOV, DeltaTime, ZoomInterpSpeed);
-
-	CameraComp->SetFieldOfView(NewFOV);
-}
-
-
 void ASCharacter::MoveForward(float Value)
 {	
 	FRotator Rotation = GetControlRotation();
@@ -114,6 +101,16 @@ void ASCharacter::MoveRight(float Value)
 	Rotation.Pitch = 0;
 	
 	AddMovementInput(UKismetMathLibrary::GetRightVector(Rotation) * Value);
+}
+
+void ASCharacter::BeginRun()
+{
+	CharacterMovementComp->MaxWalkSpeed *= 2;
+}
+
+void ASCharacter::EndRun()
+{
+	CharacterMovementComp->MaxWalkSpeed /= 2;
 }
 
 void ASCharacter::BeginCrouch()
@@ -144,11 +141,26 @@ void ASCharacter::SetTargeting(bool bNewTargeting)
 void ASCharacter::OnStartTargeting()
 {
 	SetTargeting(true);
+
+	if(IsValid(CrossHairWidgetClass))
+	{
+		CrosshairWidget = CreateWidget(GetWorld(), CrossHairWidgetClass);
+		if (IsValid(CrosshairWidget))
+		{
+		 	CrosshairWidget->AddToViewport();
+		}
+	}
+	
 }
 
 void ASCharacter::OnStopTargeting()
 {
 	SetTargeting(false);
+	
+	if(IsValid(CrossHairWidgetClass))
+	{
+		CrosshairWidget->RemoveFromViewport();	
+	}
 }
 
 void ASCharacter::StartWeaponFire()
@@ -203,6 +215,8 @@ void ASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("LookUp", this, &ASCharacter::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookRight", this, &ASCharacter::AddControllerYawInput);
 
+	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ASCharacter::BeginRun);
+	PlayerInputComponent->BindAction("Run", IE_Released, this, &ASCharacter::EndRun);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ASCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ASCharacter::EndCrouch);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ASCharacter::BeginJump);

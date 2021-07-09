@@ -3,18 +3,10 @@
 
 #include "DrawDebugHelpers.h"
 #include "SCharacter.h"
-#include "Algo/Rotate.h"
 #include "Blueprint/UserWidget.h"
 #include "Chaos/ChaosDebugDraw.h"
-#include "Components/SphereComponent.h"
 #include "CoopGame/CoopGame.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
-static int32 DebugWeaponDrawing = 0;
-FAutoConsoleVariableRef CVARDebugWeaponDrawing(
-	TEXT("COOP.DebugWeapons"),
-	DebugWeaponDrawing,
-	TEXT("Draw Debug Lines for Weapons"),
-	ECVF_Cheat);
 
 ASWeapon_Instant::ASWeapon_Instant()
 {

@@ -4,8 +4,6 @@
 
 #include "CoreMinimal.h"
 
-
-#include "SWeapon.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "SCharacter.generated.h"
@@ -21,11 +19,10 @@ public:
 	// Sets default values for this character's properties
 	ASCharacter();
 
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UUserWidget* CrosshairWidget;
 
 protected:
 	// Called when the game starts or when spawned
@@ -36,6 +33,10 @@ protected:
 
 	UFUNCTION(BlueprintCallable)
 	void MoveRight(float Value);
+
+	void BeginRun();
+
+	void EndRun();
 	
 	void BeginCrouch();
 
@@ -58,7 +59,7 @@ protected:
 	void SwitchFireMode();
 
 	void ReloadMagazine();
-
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
 	class UCameraComponent* CameraComp;
 
@@ -79,14 +80,19 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category="Player", meta=(ClampMin=0.1f, ClampMax = 100.0f));
 	float ZoomInterpSpeed = 20.f;
-
-	ASWeapon* CurrentWeapon;
-
-	FName SocketName;
 	
 	UPROPERTY(EditDefaultsOnly, Category="Player")
 	TSubclassOf<ASWeapon> StarterWeaponClass;
 
+	UPROPERTY(EditDefaultsOnly, Category="Widget")
+	TSubclassOf<class UUserWidget> CrossHairWidgetClass;
+
+	UCharacterMovementComponent* CharacterMovementComp;
+	
+	ASWeapon* CurrentWeapon;
+
+	FName SocketName;
+	
 	virtual FVector GetPawnViewLocation() const override;
 
 	uint8 bWantsToFire : 1;
@@ -103,4 +109,5 @@ protected:
 	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
 	bool IsEquipped() const;
 
+	
 };

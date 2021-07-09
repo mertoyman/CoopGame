@@ -6,13 +6,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "Grenade.h"
 
-static int32 DebugWeaponDrawing = 0;
-FAutoConsoleVariableRef CVARDebugWeaponDrawing(
-	TEXT("COOP.DebugWeapons"),
-	DebugWeaponDrawing,
-	TEXT("Draw Debug Lines for Weapons"),
-	ECVF_Cheat);
-
 void ASGrenadeLauncher::Fire()
 {
 	AActor* MyOwner = GetOwner();

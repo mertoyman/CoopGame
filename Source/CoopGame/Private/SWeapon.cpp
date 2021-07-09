@@ -5,8 +5,9 @@
 
 #include "CoopGame/CoopGame.h"
 #include "SCharacter.h"
-#include "Kismet/GameplayStatics.h"
+#include "Components/SphereComponent.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ASWeapon::ASWeapon()
@@ -14,10 +15,13 @@ ASWeapon::ASWeapon()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Scene Component"));
 	RootComponent = Root;
 	
-	MeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MeshComp"));
+	MeshComp = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMeshComp"));
 	MeshComp->SetupAttachment(RootComponent);
-	
+
 	bWantsToFire = false;
+
+	MuzzleSocketName = "WeaponSocket";
+	TracerTargetName = "BeamEnd";
 }
 
 void ASWeapon::BeginPlay()
@@ -37,17 +41,11 @@ void ASWeapon::SetOwningPawn(ASCharacter* WeaponOwner)
 	}
 }
 
-FHitResult ASWeapon::WeaponTrace(FVector TraceStart, FVector TraceEnd) const
+bool ASWeapon::WeaponTrace(FHitResult& Hit, FVector TraceStart, FVector TraceEnd) const
 {
-	
 	FCollisionQueryParams TraceParams(SCENE_QUERY_STAT(WeaponTrace), true, GetInstigator());
 	TraceParams.bReturnPhysicalMaterial = true;
-
-	FHitResult HitResult;
-
-	GetWorld()->LineTraceSingleByChannel(HitResult, TraceStart, TraceEnd, COLLISION_WEAPON, TraceParams);
-	
-	return HitResult;
+	return GetWorld()->LineTraceSingleByChannel(Hit, TraceStart, TraceEnd, COLLISION_WEAPON, TraceParams);
 }
 
 void ASWeapon::StartFire()
@@ -111,7 +109,7 @@ void ASWeapon::HandleFiring()
 	Fire();	
 }
 
-void ASWeapon::PlayFireEffects() const
+void ASWeapon::PlayFireEffects()
 {
 	if (MuzzleEffect)
 	{
@@ -120,7 +118,7 @@ void ASWeapon::PlayFireEffects() const
 	
 	if (TracerEffect)
 	{
-		const FVector MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocketName);
+		MuzzleLocation = MeshComp->GetSocketLocation(MuzzleSocketName);
 		UParticleSystemComponent* TracerComp = UGameplayStatics::SpawnEmitterAtLocation(
 			GetWorld(), TracerEffect, MuzzleLocation);
 	}

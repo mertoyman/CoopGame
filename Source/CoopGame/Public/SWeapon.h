@@ -76,10 +76,10 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="Weapon")
 	UParticleSystem* TracerEffect;
 
-	UPROPERTY(EditDefaultsOnly, Category="Weapon")
+	UPROPERTY(VisibleAnywhere, Category="Weapon")
 	FName MuzzleSocketName;
 
-	UPROPERTY(EditDefaultsOnly, Category="Weapon")
+	UPROPERTY(VisibleAnywhere, Category="Weapon")
 	FName TracerTargetName;
 
 	UPROPERTY(EditDefaultsOnly, Category="Weapon")
@@ -88,16 +88,19 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category="Weapon")
 	int32 RemainingBullets;
 	
+	UPROPERTY(EditDefaultsOnly, Category="Config")
+	FWeaponData WeaponConfig;
+
 	uint8 bWantsToFire : 1;
 
 	EWeaponState::Type CurrentState;
 
-	UPROPERTY(EditDefaultsOnly, Category="Config")
-	FWeaponData WeaponConfig;
+	FVector MuzzleLocation;
 
-	FHitResult WeaponTrace(FVector TraceStart, FVector TraceEnd) const;
+	
+	bool WeaponTrace(FHitResult& Hit, FVector TraceStart, FVector TraceEnd) const;
 
-	virtual void PlayFireEffects() const;
+	virtual void PlayFireEffects();
 
 	virtual void OnBurstStarted();
 

@@ -1,9 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 #include "SWeapon_Instant.h"
 
+#include "DrawDebugHelpers.h"
 #include "SCharacter.h"
+#include "Algo/Rotate.h"
+#include "Blueprint/UserWidget.h"
+#include "Chaos/ChaosDebugDraw.h"
+#include "Components/SphereComponent.h"
 #include "CoopGame/CoopGame.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
+static int32 DebugWeaponDrawing = 0;
+FAutoConsoleVariableRef CVARDebugWeaponDrawing(
+	TEXT("COOP.DebugWeapons"),
+	DebugWeaponDrawing,
+	TEXT("Draw Debug Lines for Weapons"),
+	ECVF_Cheat);
 
 ASWeapon_Instant::ASWeapon_Instant()
 {
@@ -82,28 +93,30 @@ void ASWeapon_Instant::DealDamage(FHitResult Impact, FVector ShotDirection)
 
 void ASWeapon_Instant::StartFiring()
 {
-	AActor* MyOwner = GetOwner();
+	APawn* MyOwner = Cast<APawn>(GetOwner());
 
 	if (MyOwner && RemainingBullets > 0)
 	{
 		FVector EyeLocation;
 		FRotator EyeRotation;
 		MyOwner->GetActorEyesViewPoint(EyeLocation, EyeRotation);
+		
+		const FVector ShotDirection = -EyeRotation.Vector();
+		const FVector TraceEnd = EyeLocation + (EyeRotation.Vector() * InstantConfig.WeaponRange);
 
-		const FVector ShotDirection = EyeRotation.Vector();
-		const FVector TraceEnd = EyeLocation + (ShotDirection * InstantConfig.WeaponRange);
-
-		const FHitResult Impact = WeaponTrace(EyeLocation, TraceEnd);
+		FHitResult Impact;
+		const bool IsHit = WeaponTrace(Impact, EyeLocation, TraceEnd);
 
 		PlayFireEffects();
 
 		UseAmmo();
 
-		if (Impact.bBlockingHit)
+		if (Impact.bBlockingHit && IsHit)
 		{
 			DealDamage(Impact, ShotDirection);
 		}
 	}
+
 }
 
 void ASWeapon_Instant::SwitchFireMode()

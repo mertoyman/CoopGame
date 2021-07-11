@@ -85,6 +85,16 @@ bool ASCharacter::IsEquipped() const
 	return bIsEquipped;
 }
 
+bool ASCharacter::IsEquippedWeaponSingleHanded() const
+{
+	if (CurrentWeapon)
+	{
+		return CurrentWeapon->IsSingleHanded();	
+	}
+
+	return nullptr;
+}
+
 void ASCharacter::MoveForward(float Value)
 {	
 	FRotator Rotation = GetControlRotation();
@@ -170,7 +180,7 @@ void ASCharacter::StartWeaponFire()
 		bWantsToFire = true;
 		if (CurrentWeapon)
 		{
-			CurrentWeapon->StartFire();	
+			CurrentWeapon->StartFire();
 		}
 	}
 }

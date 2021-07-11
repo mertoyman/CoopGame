@@ -11,7 +11,7 @@ class USkeletalMeshComponent;
 
 namespace EWeaponState
 {
-	enum Type
+	enum State
 	{
 		Idle,
 		Firing,
@@ -34,13 +34,15 @@ struct FWeaponData
 	UPROPERTY(EditDefaultsOnly, Category="Ammo")
 	int32 MaxAmmo;
 
-	FWeaponData()
-	{
-		MaxAmmo = 100;
-		AmmoPerClip = 20;
-		InitialClips = 4;
-	}
-	
+	UPROPERTY(EditDefaultsOnly, Category="Weapon")
+	bool IsSingleHanded;
+
+	FWeaponData() :
+	AmmoPerClip(20),
+	InitialClips(4),
+	MaxAmmo(100),
+	IsSingleHanded(false)
+	{}
 };
 
 UCLASS()
@@ -93,7 +95,7 @@ protected:
 
 	uint8 bWantsToFire : 1;
 
-	EWeaponState::Type CurrentState;
+	EWeaponState::State CurrentState;
 
 	FVector MuzzleLocation;
 
@@ -108,7 +110,7 @@ protected:
 
 	void DetermineWeaponState();
 
-	void SetWeaponState(EWeaponState::Type NewState);
+	void SetWeaponState(EWeaponState::State NewState);
 
 	void HandleFiring();
 
@@ -116,7 +118,10 @@ protected:
 	
 	void UseAmmo();
 
+
 public:
+	bool IsSingleHanded();
+	
 	void SetOwningPawn(ASCharacter* WeaponOwner);
 
 	void StartFire();

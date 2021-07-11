@@ -69,7 +69,7 @@ void ASWeapon::StopFire()
 
 void ASWeapon::DetermineWeaponState()
 {
-	EWeaponState::Type NewState = EWeaponState::Idle;
+	EWeaponState::State NewState = EWeaponState::Idle;
 	if (bWantsToFire)
 	{
 		NewState = EWeaponState::Firing;
@@ -78,9 +78,9 @@ void ASWeapon::DetermineWeaponState()
 	SetWeaponState(NewState);
 }
 
-void ASWeapon::SetWeaponState(EWeaponState::Type NewState)
+void ASWeapon::SetWeaponState(EWeaponState::State NewState)
 {
-	const EWeaponState::Type PrevState = CurrentState;
+	const EWeaponState::State PrevState = CurrentState;
 	
 	if (PrevState != EWeaponState::Firing && NewState == EWeaponState::Firing)
 	{
@@ -140,6 +140,16 @@ void ASWeapon::UseAmmo()
 	{
 		RemainingBullets--;
 	}
+}
+
+bool ASWeapon::IsSingleHanded()
+{
+	if (&WeaponConfig)
+	{
+		return WeaponConfig.IsSingleHanded;	
+	}
+
+	return nullptr;
 }
 
 void ASWeapon::Reload()

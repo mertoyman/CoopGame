@@ -88,7 +88,7 @@ protected:
 	TSubclassOf<class UUserWidget> CrossHairWidgetClass;
 
 	UCharacterMovementComponent* CharacterMovementComp;
-	
+
 	ASWeapon* CurrentWeapon;
 
 	FName SocketName;
@@ -109,5 +109,7 @@ protected:
 	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
 	bool IsEquipped() const;
 
-	
+	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	bool IsEquippedWeaponSingleHanded() const;
 };
+

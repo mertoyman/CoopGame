@@ -5,10 +5,12 @@
 #include "CoreMinimal.h"
 
 #include "Camera/CameraComponent.h"
+#include "Components/SHealthComponent.h"
 #include "GameFramework/Character.h"
 #include "SCharacter.generated.h"
 
 class ASWeapon;
+class USHealthComponent;
 
 UCLASS()
 class COOPGAME_API ASCharacter : public ACharacter
@@ -60,11 +62,31 @@ protected:
 
 	void ReloadMagazine();
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
+	virtual FVector GetPawnViewLocation() const override;
+
+	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	bool IsTargeting() const;
+
+	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	bool IsWeaponEquipped() const;
+
+	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	bool IsEquippedWeaponSingleHanded() const;
+
+	UFUNCTION()
+	void OnHealthChanged(float Health, float DeltaHealth,
+	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
+
+private:
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
 	class UCameraComponent* CameraComp;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
 	class USpringArmComponent* SpringArmComp;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
+	USHealthComponent* HealthComp;
 
 	UPROPERTY(EditAnywhere, Category="CameraSettings")
 	float ViewPitchMin;
@@ -92,8 +114,6 @@ protected:
 	ASWeapon* CurrentWeapon;
 
 	FName SocketName;
-	
-	virtual FVector GetPawnViewLocation() const override;
 
 	uint8 bWantsToFire : 1;
 	
@@ -102,14 +122,7 @@ protected:
 	uint8 bIsEquipped : 1;
 	
 	float DefaultFOV;
-
-	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	bool IsTargeting() const;
-
-	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	bool IsEquipped() const;
-
-	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	bool IsEquippedWeaponSingleHanded() const;
+	
+	bool bDied;
 };
 

@@ -6,6 +6,8 @@
 
 #include "SWeapon_Instant.h"
 #include "Blueprint/UserWidget.h"
+#include "Components/CapsuleComponent.h"
+#include "Components/SHealthComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -19,6 +21,8 @@ ASCharacter::ASCharacter()
 	
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));	
 	CameraComp->SetupAttachment(SpringArmComp);
+
+	HealthComp = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
 
 	CharacterMovementComp = GetCharacterMovement();
 	
@@ -63,6 +67,8 @@ void ASCharacter::BeginPlay()
 	{
 		SetEquipped(false);
 	}
+
+	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 }
 
 FVector ASCharacter::GetPawnViewLocation() const
@@ -80,7 +86,7 @@ bool ASCharacter::IsTargeting() const
 	return bIsTargeting;
 }
 
-bool ASCharacter::IsEquipped() const
+bool ASCharacter::IsWeaponEquipped() const
 {
 	return bIsEquipped;
 }
@@ -93,6 +99,19 @@ bool ASCharacter::IsEquippedWeaponSingleHanded() const
 	}
 
 	return nullptr;
+}
+
+void ASCharacter::OnHealthChanged(float Health, float DeltaHealth,
+	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
+{
+	if (Health <= 0.0f && !bDied)
+	{
+		GetMovementComponent()->StopMovementImmediately();
+
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+		bDied = true;
+	}
 }
 
 void ASCharacter::MoveForward(float Value)

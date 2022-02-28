@@ -7,9 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/NewMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/NewMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/Components/SHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/Components/SHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +279,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645792332862</updated>
-      <workItem from="1645792356867" duration="2978000" />
+      <workItem from="1645792356867" duration="8185000" />
     </task>
     <servers />
   </component>

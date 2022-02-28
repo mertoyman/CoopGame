@@ -81,15 +81,9 @@ FVector ASCharacter::GetPawnViewLocation() const
 	return Super::GetPawnViewLocation();
 }
 
-bool ASCharacter::IsTargeting() const
-{
-	return bIsTargeting;
-}
 
-bool ASCharacter::IsWeaponEquipped() const
-{
-	return bIsEquipped;
-}
+
+
 
 bool ASCharacter::IsEquippedWeaponSingleHanded() const
 {
@@ -101,7 +95,7 @@ bool ASCharacter::IsEquippedWeaponSingleHanded() const
 	return nullptr;
 }
 
-void ASCharacter::OnHealthChanged(float Health, float DeltaHealth,
+void ASCharacter::OnHealthChanged(USHealthComponent* USHealthComponent, float Health, float DeltaHealth,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
 	if (Health <= 0.0f && !bDied)

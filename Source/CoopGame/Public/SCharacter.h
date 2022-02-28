@@ -64,17 +64,17 @@ protected:
 	
 	virtual FVector GetPawnViewLocation() const override;
 
-	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	bool IsTargeting() const;
+	// UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	// bool IsTargeting() const;
 
-	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	bool IsWeaponEquipped() const;
+	// UFUNCTION(BlueprintCallable, Category="Game/Weapon")
+	// bool IsWeaponEquipped() const;
 
 	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
 	bool IsEquippedWeaponSingleHanded() const;
 
 	UFUNCTION()
-	void OnHealthChanged(float Health, float DeltaHealth,
+	void OnHealthChanged(USHealthComponent* USHealthComponent, float Health, float DeltaHealth,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 private:
@@ -97,9 +97,12 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Player")
 	float ZoomFOV = 65.0f;
 
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
 	uint8 bIsTargeting : 1;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
+	uint8 bIsEquipped : 1;
+	
 	UPROPERTY(EditDefaultsOnly, Category="Player", meta=(ClampMin=0.1f, ClampMax = 100.0f));
 	float ZoomInterpSpeed = 20.f;
 	
@@ -109,6 +112,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Widget")
 	TSubclassOf<class UUserWidget> CrossHairWidgetClass;
 
+	UPROPERTY(BlueprintReadOnly, Category="Player", meta=(AllowPrivateAccess=true))
+	bool bDied;
+	
 	UCharacterMovementComponent* CharacterMovementComp;
 
 	ASWeapon* CurrentWeapon;
@@ -118,11 +124,10 @@ private:
 	uint8 bWantsToFire : 1;
 	
 	uint8 bWantsToZoom : 1;
-
-	uint8 bIsEquipped : 1;
 	
 	float DefaultFOV;
 	
-	bool bDied;
+public:
+	
 };
 

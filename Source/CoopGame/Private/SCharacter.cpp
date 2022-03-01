@@ -105,6 +105,10 @@ void ASCharacter::OnHealthChanged(USHealthComponent* USHealthComponent, float He
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 		bDied = true;
+
+		APlayerController* PlayerController = Cast<APlayerController>(this);
+		
+		DisableInput(PlayerController);
 	}
 }
 

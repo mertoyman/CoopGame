@@ -64,12 +64,6 @@ protected:
 	
 	virtual FVector GetPawnViewLocation() const override;
 
-	// UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	// bool IsTargeting() const;
-
-	// UFUNCTION(BlueprintCallable, Category="Game/Weapon")
-	// bool IsWeaponEquipped() const;
-
 	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
 	bool IsEquippedWeaponSingleHanded() const;
 
@@ -112,7 +106,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Widget")
 	TSubclassOf<class UUserWidget> CrossHairWidgetClass;
 
-	UPROPERTY(BlueprintReadOnly, Category="Player", meta=(AllowPrivateAccess=true))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Player", meta=(AllowPrivateAccess=true))
 	bool bDied;
 	
 	UCharacterMovementComponent* CharacterMovementComp;

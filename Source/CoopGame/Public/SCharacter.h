@@ -67,7 +67,7 @@ protected:
 	UFUNCTION(BlueprintCallable, Category="Game/Weapon")
 	bool IsEquippedWeaponSingleHanded() const;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void OnHealthChanged(USHealthComponent* USHealthComponent, float Health, float DeltaHealth,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 

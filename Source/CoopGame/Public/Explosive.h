@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "Explosive.generated.h"
 
+class USHealthComponent;
+
 UCLASS()
 class COOPGAME_API AExplosive : public AActor
 {
@@ -20,15 +22,16 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION()
-	void OnHealthChanged(class USHealthComponent* USHealthComponent, float Health, float DeltaHealth,
+	void OnHealthChanged(class USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
+	USHealthComponent* HealthComp;
 private:
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
 	class UStaticMeshComponent* StaticMeshComp;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
-	class USHealthComponent* HealthComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta=(AllowPrivateAccess=true))
 	class URadialForceComponent* RadialForceComp;

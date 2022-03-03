@@ -7,7 +7,7 @@
 #include "STrackerBot.generated.h"
 
 class UStaticMeshComponent;
-
+class USHealthComponent;
 UCLASS()
 class COOPGAME_API ASTrackerBot : public APawn
 {
@@ -24,6 +24,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="AI")
 	UStaticMeshComponent* MeshComp;
 
+	UPROPERTY(EditDefaultsOnly, Category="AI")
+	USHealthComponent* HealthComp;
+
 	FVector GetNextPathPoint();
 
 	// Next point in navigation path
@@ -35,6 +38,10 @@ protected:
 	// Distance from target to stop movement
 	UPROPERTY(EditAnywhere, Category="AI")
 	float RequiredDistanceToTarget;
+
+	UFUNCTION()
+	void HandleTakeDamage(USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
+	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 public:	
 	// Called every frame

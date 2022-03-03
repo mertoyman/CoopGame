@@ -7,7 +7,6 @@
 #include "SWeapon_Instant.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/CapsuleComponent.h"
-#include "Components/SHealthComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -23,6 +22,7 @@ ASCharacter::ASCharacter()
 	CameraComp->SetupAttachment(SpringArmComp);
 
 	HealthComp = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
+	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 
 	CharacterMovementComp = GetCharacterMovement();
 	
@@ -68,7 +68,7 @@ void ASCharacter::BeginPlay()
 		SetEquipped(false);
 	}
 
-	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+	
 }
 
 FVector ASCharacter::GetPawnViewLocation() const

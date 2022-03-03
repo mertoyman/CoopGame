@@ -3,11 +3,11 @@
 
 #include "AI/STrackerBot.h"
 
-#include "DrawDebugHelpers.h"
 #include "NavigationPath.h"
 #include "NavigationSystem.h"
 #include "SCharacter.h"
 #include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 ASTrackerBot::ASTrackerBot() :
@@ -21,6 +21,9 @@ RequiredDistanceToTarget(50.f)
 	MeshComp->SetupAttachment(RootComponent);
 	MeshComp->SetCanEverAffectNavigation(false);
 	MeshComp->SetSimulatePhysics(true);
+
+	HealthComp = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
+	HealthComp->OnHealthChanged.AddDynamic(this, &ASTrackerBot::HandleTakeDamage);
 }
 
 // Called when the game starts or when spawned
@@ -28,12 +31,14 @@ void ASTrackerBot::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// Find intial move to
 	NextPathPoint = GetNextPathPoint();
 	
 }
 
 FVector ASTrackerBot::GetNextPathPoint()
 {
+	// Hack to get player location
 	ACharacter* PlayerCharacter = UGameplayStatics::GetPlayerCharacter(this, 0);
 	UNavigationPath* NavPath = UNavigationSystemV1::FindPathToActorSynchronously(
 		this,
@@ -42,11 +47,21 @@ FVector ASTrackerBot::GetNextPathPoint()
 	
 	if (NavPath->PathPoints.Num() > 1 )
 	{
+		// Return next point in the path
 		return NavPath->PathPoints[1];
 	}
 
 	
 	return GetActorLocation();
+}
+
+void ASTrackerBot::HandleTakeDamage(USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
+	const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
+{
+	// Explode on hitpoints == 0
+
+	//TODO: Pulse the material on hit
+
 }
 
 // Called every frame

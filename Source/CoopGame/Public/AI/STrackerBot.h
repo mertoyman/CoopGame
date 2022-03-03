@@ -24,6 +24,18 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="AI")
 	UStaticMeshComponent* MeshComp;
 
+	FVector GetNextPathPoint();
+
+	// Next point in navigation path
+	FVector NextPathPoint;
+
+	UPROPERTY(EditAnywhere, Category="AI")
+	float ForceAmount;
+
+	// Distance from target to stop movement
+	UPROPERTY(EditAnywhere, Category="AI")
+	float RequiredDistanceToTarget;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

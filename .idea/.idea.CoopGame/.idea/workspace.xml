@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/AO_Rifle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/AO_Rifle.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Center.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Center.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Down.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Down.uasset" afterDir="false" />
@@ -82,30 +83,14 @@
       <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Walk_F_IPC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Walk_F_IPC.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Animations/Death_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Death_1.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/ABP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/ABP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/M_UE4Man_Body.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/M_UE4Man_ChestLogo.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/T_ML_Aluminum01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/SK_Mannequin.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/SK_Mannequin_Anim.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/SK_Mannequin_PhysicsAsset.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/UE4_Mannequin_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/UE4_Mannequin_Skeletonw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Textures/UE4Man_Logo_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Textures/UE4_LOGO_CARD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Textures/UE4_Mannequin_MAT_MASKA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Textures/UE4_Mannequin__normals.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/Textures/UE4_Mannequin_occlusion.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap1.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/NewMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/NewMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/M_HealthIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/M_HealthIndicator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCO_Mocap_Basics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/CoopGame.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +363,8 @@
       <updated>1645792332862</updated>
       <workItem from="1645792356867" duration="11457000" />
       <workItem from="1646045798822" duration="15408000" />
-      <workItem from="1646224293721" duration="1923000" />
+      <workItem from="1646224293721" duration="2911000" />
+      <workItem from="1646228297623" duration="5703000" />
     </task>
     <servers />
   </component>

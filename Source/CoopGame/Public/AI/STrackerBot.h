@@ -39,6 +39,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category="AI")
 	float RequiredDistanceToTarget;
 
+	// Dynamic material to pulse on damage
+	UMaterialInstanceDynamic* MatInst;
+
 	UFUNCTION()
 	void HandleTakeDamage(USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
 	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);

@@ -61,6 +61,15 @@ void ASTrackerBot::HandleTakeDamage(USHealthComponent* OwningHealthComponent, fl
 	// Explode on hitpoints == 0
 
 	//TODO: Pulse the material on hit
+	if (!MatInst)
+	{
+		MatInst = MeshComp->CreateAndSetMaterialInstanceDynamicFromMaterial(0,MeshComp->GetMaterial(0));
+	}
+	else
+	{
+		MatInst->SetScalarParameterValue("LastTimeDamageTaken", GetWorld()->TimeSeconds);
+	}
+
 
 }
 

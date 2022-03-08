@@ -66,6 +66,7 @@ void ASWeapon_Instant::OnBurstFinished()
 
 void ASWeapon_Instant::DealDamage(FHitResult Impact, FVector ShotDirection)
 {
+	
 	float ActualDamage = InstantConfig.BaseDamage;
 
 	EPhysicalSurface SurfaceType = UPhysicalMaterial::DetermineSurfaceType(Impact.PhysMaterial.Get());
@@ -103,7 +104,7 @@ void ASWeapon_Instant::StartFiring()
 
 		UseAmmo();
 
-		if (Impact.bBlockingHit && IsHit)
+		if (Impact.GetActor()  && Impact.bBlockingHit && IsHit)
 		{
 			DealDamage(Impact, ShotDirection);
 		}

@@ -3,16 +3,23 @@
 
 #include "AI/STrackerBot.h"
 
+#include <vcruntime_startup.h>
+#include <destructible/ModuleDestructible.h>
+
 #include "NavigationPath.h"
 #include "NavigationSystem.h"
 #include "SCharacter.h"
+#include "SExplosionEffect.h"
 #include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
 ASTrackerBot::ASTrackerBot() :
+RequiredDistanceToTarget(50.f),
 ForceAmount(300.f),
-RequiredDistanceToTarget(50.f)
+BaseDamage(500.f),
+DamageRadius(300.f),
+bExploded(false)
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -70,7 +77,27 @@ void ASTrackerBot::HandleTakeDamage(USHealthComponent* OwningHealthComponent, fl
 		MatInst->SetScalarParameterValue("LastTimeDamageTaken", GetWorld()->TimeSeconds);
 	}
 
+	if(Health <= 0)
+	{
+		SelfDestruct();
+	}
+}
 
+void ASTrackerBot::SelfDestruct()
+{
+	if(bExploded) return;
+
+	bExploded = true;
+	
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
+
+	TArray<AActor*> IgnoredActors;
+	IgnoredActors.Add(this);
+
+	UGameplayStatics::ApplyRadialDamage(this, BaseDamage, GetActorLocation(), DamageRadius, UDamageType::StaticClass(), IgnoredActors);
+	
+	// Delete actor immediately
+	Destroy();
 }
 
 // Called every frame

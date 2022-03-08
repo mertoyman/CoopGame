@@ -7,8 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/M_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/M_TrackerBot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/Explosive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/Explosive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SWeapon_Instant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SWeapon_Instant.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +288,8 @@
       <workItem from="1646045798822" duration="15408000" />
       <workItem from="1646224293721" duration="2911000" />
       <workItem from="1646228297623" duration="9008000" />
-      <workItem from="1646301359005" duration="1898000" />
+      <workItem from="1646301359005" duration="6400000" />
+      <workItem from="1646668326482" duration="3861000" />
     </task>
     <servers />
   </component>

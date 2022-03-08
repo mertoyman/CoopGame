@@ -27,25 +27,42 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="AI")
 	USHealthComponent* HealthComp;
 
-	FVector GetNextPathPoint();
+	UPROPERTY(EditDefaultsOnly, Category="AI")
+	UParticleSystem* ExplosionEffect;
 
+
+
+	FVector GetNextPathPoint();
+	
+	UFUNCTION()
+	void HandleTakeDamage(USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
+	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
+	
+	void SelfDestruct();
+
+private:
+	// Dynamic material to pulse on damage
+	UMaterialInstanceDynamic* MatInst;
+
+	// Distance from target to stop movement
+	UPROPERTY(EditAnywhere, Category="AI")
+	float RequiredDistanceToTarget;
+	
 	// Next point in navigation path
 	FVector NextPathPoint;
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	float ForceAmount;
 
-	// Distance from target to stop movement
 	UPROPERTY(EditAnywhere, Category="AI")
-	float RequiredDistanceToTarget;
+	float BaseDamage;
 
-	// Dynamic material to pulse on damage
-	UMaterialInstanceDynamic* MatInst;
+	UPROPERTY(EditAnywhere, Category="AI")
+	float DamageRadius;
 
-	UFUNCTION()
-	void HandleTakeDamage(USHealthComponent* OwningHealthComponent, float Health, float DeltaHealth,
-	const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
-
+	UPROPERTY(EditAnywhere, Category="AI")
+	bool bExploded;
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -3,6 +3,7 @@
 
 #include "Explosive.h"
 
+#include "AI/STrackerBot.h"
 #include "Components/SHealthComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "PhysicsEngine/RadialForceComponent.h"
@@ -32,6 +33,7 @@ void AExplosive::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 }
 
 void AExplosive::OnHealthChanged(USHealthComponent* USHealthComponent, float Health, float DeltaHealth,

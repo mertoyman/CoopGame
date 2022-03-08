@@ -8,6 +8,8 @@
 
 class UStaticMeshComponent;
 class USHealthComponent;
+class USphereComponent;
+
 UCLASS()
 class COOPGAME_API ASTrackerBot : public APawn
 {
@@ -28,9 +30,7 @@ protected:
 	USHealthComponent* HealthComp;
 
 	UPROPERTY(EditDefaultsOnly, Category="AI")
-	UParticleSystem* ExplosionEffect;
-
-
+	USphereComponent* SphereComp;
 
 	FVector GetNextPathPoint();
 	
@@ -40,9 +40,14 @@ protected:
 	
 	void SelfDestruct();
 
+	void DamageSelf();
+
 private:
 	// Dynamic material to pulse on damage
 	UMaterialInstanceDynamic* MatInst;
+
+	UPROPERTY(EditDefaultsOnly, Category="AI")
+	UParticleSystem* ExplosionEffect;
 
 	// Distance from target to stop movement
 	UPROPERTY(EditAnywhere, Category="AI")
@@ -63,9 +68,14 @@ private:
 	UPROPERTY(EditAnywhere, Category="AI")
 	bool bExploded;
 	
+	FTimerHandle TimerHandle_SelfDamage;
+
+	UPROPERTY(EditAnywhere, Category="AI")
+	float ExplosionTimerInSeconds;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
 };

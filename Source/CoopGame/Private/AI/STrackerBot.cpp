@@ -3,13 +3,11 @@
 
 #include "AI/STrackerBot.h"
 
-#include <vcruntime_startup.h>
-#include <destructible/ModuleDestructible.h>
-
 #include "NavigationPath.h"
 #include "NavigationSystem.h"
 #include "SCharacter.h"
 #include "SExplosionEffect.h"
+#include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -19,7 +17,8 @@ RequiredDistanceToTarget(50.f),
 ForceAmount(300.f),
 BaseDamage(500.f),
 DamageRadius(300.f),
-bExploded(false)
+bExploded(false),
+ExplosionTimerInSeconds(3.0f)
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -29,6 +28,13 @@ bExploded(false)
 	MeshComp->SetCanEverAffectNavigation(false);
 	MeshComp->SetSimulatePhysics(true);
 
+	SphereComp = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere Comp"));
+	SphereComp->SetupAttachment(RootComponent);
+	SphereComp->SetSphereRadius(200);
+	SphereComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	SphereComp->SetCollisionResponseToAllChannels(ECR_Ignore);
+	SphereComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	
 	HealthComp = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
 	HealthComp->OnHealthChanged.AddDynamic(this, &ASTrackerBot::HandleTakeDamage);
 }
@@ -88,6 +94,8 @@ void ASTrackerBot::SelfDestruct()
 	if(bExploded) return;
 
 	bExploded = true;
+
+	//TODO: Play explosion sound
 	
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ExplosionEffect, GetActorLocation());
 
@@ -98,6 +106,14 @@ void ASTrackerBot::SelfDestruct()
 	
 	// Delete actor immediately
 	Destroy();
+}
+
+void ASTrackerBot::DamageSelf()
+{
+	//TODO: Play counting sound (faster to the end)
+	//TODO: Play explosion sound
+
+	UGameplayStatics::ApplyDamage(this, BaseDamage, GetInstigatorController(), this, UDamageType::StaticClass());
 }
 
 // Called every frame
@@ -122,6 +138,15 @@ void ASTrackerBot::Tick(float DeltaTime)
 		NextPathPoint = GetNextPathPoint();
 	}
 
+}
+
+void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
+	if (PlayerPawn)
+	{
+		GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, ExplosionTimerInSeconds, true);
+	}
 }
 
 

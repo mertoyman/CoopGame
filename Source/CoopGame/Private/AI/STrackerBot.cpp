@@ -9,6 +9,7 @@
 #include "SExplosionEffect.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 
 // Sets default values
@@ -49,6 +50,30 @@ void ASTrackerBot::BeginPlay()
 	
 }
 
+// Called every frame
+void ASTrackerBot::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	const float DistanceToTarget = FVector::Distance(GetActorLocation(), NextPathPoint);
+	
+	if (DistanceToTarget >= RequiredDistanceToTarget)
+	{
+		// Keep moving towards next target
+		FVector ForceDirection = NextPathPoint - GetActorLocation();
+		ForceDirection.Normalize();
+
+		ForceDirection *= ForceAmount;
+
+		MeshComp->AddForce(ForceDirection, NAME_None, true);
+	}
+	else
+	{
+		NextPathPoint = GetNextPathPoint();
+	}
+
+}
+
 FVector ASTrackerBot::GetNextPathPoint()
 {
 	// Hack to get player location
@@ -63,7 +88,6 @@ FVector ASTrackerBot::GetNextPathPoint()
 		// Return next point in the path
 		return NavPath->PathPoints[1];
 	}
-
 	
 	return GetActorLocation();
 }
@@ -108,46 +132,29 @@ void ASTrackerBot::SelfDestruct()
 	Destroy();
 }
 
-void ASTrackerBot::DamageSelf()
-{
-	//TODO: Play counting sound (faster to the end)
-	//TODO: Play explosion sound
-
-	UGameplayStatics::ApplyDamage(this, BaseDamage, GetInstigatorController(), this, UDamageType::StaticClass());
-}
-
-// Called every frame
-void ASTrackerBot::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	const float DistanceToTarget = FVector::Distance(GetActorLocation(), NextPathPoint);
-	
-	if (DistanceToTarget >= RequiredDistanceToTarget)
-	{
-		// Keep moving towards next target
-		FVector ForceDirection = NextPathPoint - GetActorLocation();
-		ForceDirection.Normalize();
-
-		ForceDirection *= ForceAmount;
-
-		MeshComp->AddForce(ForceDirection, NAME_None, true);
-	}
-	else
-	{
-		NextPathPoint = GetNextPathPoint();
-	}
-
-}
 
 void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
 {
-	ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
-	if (PlayerPawn)
+	if(!bStartedSelfDestruction)
 	{
-		GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, ExplosionTimerInSeconds, true);
+		ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);
+		if (PlayerPawn)
+		{
+			// Start self destruction sequence
+			GetWorldTimerManager().SetTimer(TimerHandle_SelfDamage, this, &ASTrackerBot::DamageSelf, ExplosionTimerInSeconds, true);
+
+			bStartedSelfDestruction = true;
+			
+			UGameplayStatics::SpawnSoundAttached(SelfDestructSound, RootComponent);
+		}
 	}
 }
 
+void ASTrackerBot::DamageSelf()
+{
+	UGameplayStatics::ApplyDamage(this, BaseDamage, GetInstigatorController(), this, UDamageType::StaticClass());
+
+	UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, GetActorLocation());
+}
 
 

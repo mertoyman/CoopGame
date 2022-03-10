@@ -9,6 +9,7 @@
 class UStaticMeshComponent;
 class USHealthComponent;
 class USphereComponent;
+class USoundCue;
 
 UCLASS()
 class COOPGAME_API ASTrackerBot : public APawn
@@ -67,11 +68,19 @@ private:
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	bool bExploded;
+
+	UPROPERTY(EditDefaultsOnly, Category="AI")
+	USoundCue* ExplosionSound;
 	
+	UPROPERTY(EditDefaultsOnly, Category="AI")
+	USoundCue* SelfDestructSound;
+
 	FTimerHandle TimerHandle_SelfDamage;
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	float ExplosionTimerInSeconds;
+
+	bool bStartedSelfDestruction;
 
 public:	
 	// Called every frame

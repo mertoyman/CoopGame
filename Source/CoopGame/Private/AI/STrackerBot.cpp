@@ -143,6 +143,8 @@ void ASTrackerBot::SelfDestruct()
 
 void ASTrackerBot::NotifyActorBeginOverlap(AActor* OtherActor)
 {
+	Super::NotifyActorBeginOverlap(OtherActor);
+	
 	if(!bStartedSelfDestruction)
 	{
 		ASCharacter* PlayerPawn = Cast<ASCharacter>(OtherActor);

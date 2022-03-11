@@ -6,16 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/Material/M_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/Material/M_TrackerBot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +286,7 @@
       <workItem from="1646228297623" duration="9008000" />
       <workItem from="1646301359005" duration="6400000" />
       <workItem from="1646668326482" duration="11539000" />
-      <workItem from="1646989391467" duration="3243000" />
+      <workItem from="1646989391467" duration="5290000" />
     </task>
     <servers />
   </component>

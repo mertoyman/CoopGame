@@ -43,6 +43,8 @@ protected:
 
 	void DamageSelf();
 
+	void OnCheckNearbyBots();
+
 private:
 	// Dynamic material to pulse on damage
 	UMaterialInstanceDynamic* MatInst;
@@ -61,7 +63,7 @@ private:
 	float ForceAmount;
 
 	UPROPERTY(EditAnywhere, Category="AI")
-	float BaseDamage;
+	float ExplosionDamage;
 
 	UPROPERTY(EditAnywhere, Category="AI")
 	float DamageRadius;
@@ -81,6 +83,9 @@ private:
 	float ExplosionTimerInSeconds;
 
 	bool bStartedSelfDestruction;
+
+	UPROPERTY(VisibleAnywhere, Category="AI")
+	float PowerLevel;
 
 public:	
 	// Called every frame

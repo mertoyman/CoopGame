@@ -6,174 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/AO_Rifle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Idle_Crouching_Aiming.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Center.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Down.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_DoubleHanded/Rifle_AO_Up.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_Pistol/Standing_AO_Pistol/AO_Pistol.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_Pistol/Standing_AO_Pistol/Pistol_AO_Center.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_Pistol/Standing_AO_Pistol/Pistol_AO_Down.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AimOffsets/AO_Pistol/Standing_AO_Pistol/Pistol_AO_Up.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/BS_Crouch_Rifle_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_BL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_BR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_FL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_FR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_CrouchWalk_R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Crouching_DH_C/Rifle_Aiming_Crouch_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Ability_RMB_Walk_Left.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/BS_Standing_Rifle_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_BL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_BR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_FL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_FR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Run_R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_BL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_BR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_FL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_FR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/DH_C/Standing_DH_C/Rifle_Aiming_Walk_R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/BS_Crouching_SH_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch2Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_CrouchLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_StrafeLeft135.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_StrafeLeftt45.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_StrafeRight135.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_StrafeRight45.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_WalkBwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_WalkFwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_WalkLt.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Crouching_SH_C/Pistol_Crouch_WalkRt.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/BS_Standing_SH_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_RunFwdLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeLeft135Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeLeft45Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeLeftLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeRight135Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeRight45Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_StrafeRightLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_WalkBwdLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Combat/SH_C/Standing_SH_C/Pistol_WalkFwdLoop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Crouching_DH_NC/BS_Crouch_Rifle_NC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Crouching_DH_NC/W2_CrouchWalk_F_Loop_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Crouching_DH_NC/W2_Crouch_Idle_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Standing_DH_NC/BS_Rifle_NC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Standing_DH_NC/W2_Run_F_Loop_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Standing_DH_NC/W2_Stand_Relaxed_Idle_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/DH_NC/Standing_DH_NC/W2_Walk_F_Loop_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Crouching_SH_NC/BS_Crouching_SH_NC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Crouching_SH_NC/MOB1_CrouchWalk_F_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Crouching_SH_NC/MOB1_Crouch_Idle_V2_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/BS_Standing_SH_NC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Jog_F_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Run_F_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Stand_Relaxed_Idle_v2_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Blendspaces/Non_Combat/SH_NC/Standing_SH_NC/MOB1_Walk_F_IPC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Death_1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/ABP_Character.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ExplosiveBarrel.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ExtractionZone.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GrenadeLauncher.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_HUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_PlayerController.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ProjectileExplosion.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Rifle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_SMG11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_SilencedPistol.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_SpectatingViewpoint.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TargetDummy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TrackerBot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Core/PhysMat_FleshDefault.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Core/PhysMat_FleshVulnerable.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExplosiveBarrel/M_ExplosiveBarrel.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExplosiveBarrel/M_ExplosiveBarrelExploded.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ExplosiveBarrel/SM_ExplosiveBarrel.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/M_UE4Man_Body.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/M_UE4Man_ChestLogo.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/T_ML_Aluminum01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Mesh/SK_Mannequin.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Mesh/SK_Mannequin_Anim.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Mesh/SK_Mannequin_PhysicsAsset.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Mesh/UE4_Mannequin_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Mesh/UE4_Mannequin_Skeletonw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Textures/UE4Man_Logo_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Textures/UE4_LOGO_CARD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Textures/UE4_Mannequin_MAT_MASKA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Textures/UE4_Mannequin__normals.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mannequin/Textures/UE4_Mannequin_occlusion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/SpawnBox_M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/SpawnBox_M_Inst.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Materials/T_DevPatterns.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/M_TrackerBot.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/SM_TrackerBot.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Crosshairs/M_Crosshairs_MultiHolo_Scanline.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Crosshairs/T_Crosshair_Horizontal_M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Crosshairs/T_Crosshair_Scanline_M.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/Launcher_01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/Launcher_02_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/Launcher_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/MI_Launcher01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/MI_Launcher02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Launcher/SK_Launcher.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Materials/SilencedPistol/M_SilencedPistol.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Meshes/SilencedPistol/SK_SilencedPistol.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Meshes/SilencedPistol/SilencedPistol_PhysicsAsset.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Meshes/SilencedPistol/SilencedPistol_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/MI_Rifle01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/MI_Rifle02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/M_Weapon01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/MagGun_01_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/MagGun_02_N.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/SK_Rifle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Rifle/SK_Rifle_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_RDS_Master.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_SMG11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_SMG11_Camo.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_SMG11_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_SMG11_Rem.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_Scope_Lens_MASTER.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/M_Weapon_Master_USE.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/SK_SMG11_Y.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/SK_SMG11_Y_Physics.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/SK_SMG11_Y_Skeleton.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_KA74U_ALB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_KA74U_M_MSK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_KA74U_NRM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_ALB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_M_MSK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_NRM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_Rem_ALB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_Rem_M_MSK.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/SMG11/T_SMG11_Rem_NRM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/SilencedPistol_Base_Color.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/Usp-s_Metallic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/Usp-s_Mixed_AO.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/Usp-s_Normal.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/Usp-s_Normal_OpenGL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/Textures/SilencedPistol/Usp-s_Roughness.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/Material/M_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/Material/M_TrackerBot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" afterDir="false" />
     </list>
@@ -454,6 +294,7 @@
       <workItem from="1646228297623" duration="9008000" />
       <workItem from="1646301359005" duration="6400000" />
       <workItem from="1646668326482" duration="11539000" />
+      <workItem from="1646989391467" duration="3243000" />
     </task>
     <servers />
   </component>

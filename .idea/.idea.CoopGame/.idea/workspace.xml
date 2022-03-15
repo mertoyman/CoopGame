@@ -7,6 +7,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/Meshes/SpeedIcon_Cube.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/Meshes/SpeedIcon_Cube_001.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/Meshes/SpeedIcon_Cube_002.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/PowerUp_SuperSpeed.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SPickupActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SPickupActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SPickupActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SPickupActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SPowerupActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SPowerupActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +295,7 @@
       <workItem from="1646228297623" duration="9008000" />
       <workItem from="1646301359005" duration="6400000" />
       <workItem from="1646668326482" duration="11539000" />
-      <workItem from="1646989391467" duration="7070000" />
+      <workItem from="1646989391467" duration="13998000" />
     </task>
     <servers />
   </component>

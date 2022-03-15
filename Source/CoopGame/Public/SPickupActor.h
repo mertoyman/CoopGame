@@ -7,6 +7,7 @@
 #include "SPickupActor.generated.h"
 
 class USphereComponent;
+class ASPowerupActor;
 
 UCLASS()
 class COOPGAME_API ASPickupActor : public AActor
@@ -26,6 +27,14 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	UDecalComponent* DecalComp;
+
+	UPROPERTY(EditDefaultsOnly, Category="PickUpActor")
+	TSubclassOf<ASPowerupActor> PowerUpClass;
+
+	ASPowerupActor* PowerUpInstance;
+
+private:
+	void Respawn();
 
 public:	
 	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;

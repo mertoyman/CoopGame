@@ -30,8 +30,7 @@ protected:
 
 	UFUNCTION()
 	void OnTickPowerUp();
-
-	void ActivatePowerUp();
+	
 
 private:
 
@@ -50,4 +49,5 @@ private:
 
 public:
 
+	void ActivatePowerUp();
 };

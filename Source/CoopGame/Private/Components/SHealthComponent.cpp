@@ -38,4 +38,11 @@ void USHealthComponent::HandleTakeAnyDamage(AActor* DamagedActor, float Damage, 
 	OnHealthChanged.Broadcast(this, Health, Damage, DamageType, InstigatedBy, DamageCauser);
 }
 
+void USHealthComponent::Heal(float HealingAmount)
+{
+	Health = FMath::Clamp(Health + HealingAmount, 0.0f, MaxHealth);
+	
+	OnHealthChanged.Broadcast(this, Health, -HealingAmount, nullptr, nullptr, nullptr);
+}
+
 

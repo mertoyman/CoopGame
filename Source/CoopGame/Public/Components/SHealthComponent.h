@@ -32,8 +32,13 @@ protected:
 private:
 	UFUNCTION(BlueprintCallable)
 	void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
+
+	UFUNCTION(BlueprintCallable, Category="HealthComponent")
+	void Heal(float HealingAmount);
+	
 public:	
 
 	UPROPERTY(BlueprintAssignable, Category= "Events")
 	FOnHealthChangedSignature OnHealthChanged;
+
 };

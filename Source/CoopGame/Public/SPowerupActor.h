@@ -35,11 +35,11 @@ protected:
 private:
 
 	/* Time between powerup ticks */
-	UPROPERTY(EditDefaultsOnly, Category=Powerups)
+	UPROPERTY(EditDefaultsOnly, Category=PowerUps)
 	float PowerupInterval;
 
 	/* Total time in seconds we apply the powerup effect */
-	UPROPERTY(EditDefaultsOnly, Category=Powerups)
+	UPROPERTY(EditDefaultsOnly, Category=PowerUps)
 	int32 TotalNumberOfTicks;
 
 	FTimerHandle TimerHandle_PowerUpTick;
@@ -47,7 +47,9 @@ private:
 	/* Total number of ticks applied */
 	int32 TicksProcessed;
 
-public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="PowerUps", meta=(AllowPrivateAccess=true))
+	bool bActivated;
 
+public:
 	void ActivatePowerUp();
 };

@@ -7,27 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/MI_BlockoutBasic.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/MI_BlockoutBasic.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/M_Blockout.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/M_Blockout.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/HealthRegen/Meshes/HealthIcon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/HealthRegen/Meshes/HealthIcon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Powerups/HealthRegen/PowerUp_HealthRegen.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/HealthRegen/PowerUp_HealthRegen.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/M_PowerUpDecal.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Material.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/Materials/Textures/T_CircleMask3.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/Materials/M_PowerUp_SuperSpeed.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/Mesh/SpeedIcon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/Mesh/SpeedIcon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/PowerUp_SuperSpeed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/PowerUp_SuperSpeed.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SPickupActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SPickupActor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SPowerupActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SPowerupActor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +292,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="13273000" />
+      <workItem from="1647361077283" duration="15818000" />
     </task>
     <servers />
   </component>

@@ -6,7 +6,9 @@
 // Sets default values
 ASPowerupActor::ASPowerupActor() :
 	PowerupInterval(0.f),
-	TotalNumberOfTicks(0)
+	TotalNumberOfTicks(1),
+	TicksProcessed(0),
+	bActivated(false)
 {
  	
 }

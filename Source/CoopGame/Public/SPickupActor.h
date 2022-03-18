@@ -22,21 +22,23 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(VisibleAnywhere, Category="Components")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	USphereComponent* SphereComp;
 	
-	UPROPERTY(VisibleAnywhere, Category="Components")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	UDecalComponent* DecalComp;
 
-	UPROPERTY(EditAnywhere, Category="PickUpActor")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="PickUpActor")
 	TSubclassOf<ASPowerupActor> PowerUpClass;
 
+	UPROPERTY(BlueprintReadOnly)
 	ASPowerupActor* PowerUpInstance;
 
 private:
 	void Respawn();
 
-public:	
+public:
+	
 	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
 
 };

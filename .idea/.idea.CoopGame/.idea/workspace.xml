@@ -6,11 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGameGameModeBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGameGameModeBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_AllPLayers.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_AllPLayers.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +294,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="17445000" />
+      <workItem from="1647361077283" duration="18955000" />
     </task>
     <servers />
   </component>

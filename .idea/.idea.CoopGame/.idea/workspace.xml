@@ -6,12 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/HealthRegen/PowerUp_HealthRegen.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/HealthRegen/PowerUp_HealthRegen.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/PowerUp_SuperSpeed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/SuperSpeed/PowerUp_SuperSpeed.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SPowerupActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGameGameModeBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGameGameModeBase.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +291,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="15818000" />
+      <workItem from="1647361077283" duration="17445000" />
     </task>
     <servers />
   </component>

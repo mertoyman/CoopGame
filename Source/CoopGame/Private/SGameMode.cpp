@@ -4,6 +4,7 @@
 #include "SGameMode.h"
 
 #include "EngineUtils.h"
+#include "SGameState.h"
 #include "Components/SHealthComponent.h"
 
 ASGameMode::ASGameMode() :
@@ -11,6 +12,8 @@ NoOfBotsToSpawn(5),
 WaveCount(0),
 TimeBetweenWaves(10.0f)
 {
+	GameStateClass = ASGameState::StaticClass();
+	
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.TickInterval = 1.0f;
 }
@@ -97,6 +100,15 @@ void ASGameMode::CheckWaveState()
 void ASGameMode::GameOver()
 {
 	EndWave();
+}
+
+void ASGameMode::SetWaveState(EWaveState NewState)
+{
+	ASGameState* GS = GetGameState<ASGameState>();
+	if (ensureAlways(GS))
+	{
+		GS->WaveState = NewState;
+	}
 }
 
 void ASGameMode::CheckAnyPlayerAlive()

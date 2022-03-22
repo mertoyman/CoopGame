@@ -81,10 +81,6 @@ FVector ASCharacter::GetPawnViewLocation() const
 	return Super::GetPawnViewLocation();
 }
 
-
-
-
-
 bool ASCharacter::IsEquippedWeaponSingleHanded() const
 {
 	if (CurrentWeapon)

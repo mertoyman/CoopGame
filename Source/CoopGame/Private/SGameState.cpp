@@ -3,3 +3,14 @@
 
 #include "SGameState.h"
 
+ASGameState::ASGameState() :
+	OldWaveState(WaveState)
+{
+}
+
+void ASGameState::StateChanged(const EWaveState NewState)
+{
+	OldWaveState = WaveState;
+	
+	WaveStateChanged(NewState, OldWaveState);
+}

@@ -25,14 +25,27 @@ UCLASS()
 class COOPGAME_API ASGameState : public AGameStateBase
 {
 	GENERATED_BODY()
+	
+public:
 
+	ASGameState();
+
+	
 protected:
-
+	
 	UFUNCTION(BlueprintImplementableEvent,Category="GameState")
 	void WaveStateChanged(EWaveState NewState, EWaveState OldState);
-
+	
+private:
+	EWaveState OldWaveState;
+	
 public:
 
 	UPROPERTY(BlueprintReadOnly, Category="GameState")
 	EWaveState WaveState;
+
+	UFUNCTION()
+	void StateChanged(EWaveState NewState);
+
+	EWaveState GetOldState() const { return OldWaveState; }
 };

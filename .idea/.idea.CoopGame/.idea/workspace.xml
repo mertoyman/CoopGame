@@ -6,11 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameState.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameState.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SGameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameState.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SGameState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameState.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +303,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="37384000" />
+      <workItem from="1647361077283" duration="42254000" />
     </task>
     <servers />
   </component>
@@ -312,6 +316,17 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp</url>
+          <line>93</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

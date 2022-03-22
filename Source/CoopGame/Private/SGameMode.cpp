@@ -41,18 +41,23 @@ void ASGameMode::StartWave()
 	NoOfBotsToSpawn = 2 * WaveCount;
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_BotSpawner, this, &ASGameMode::SpawnBotSequence, 1.0f, true, 0.0f);
+
+	SetWaveState(EWaveState::WaveInProgress);
 }
 
 void ASGameMode::EndWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
-	
+
+	SetWaveState(EWaveState::WaveComplete);
 }
 
 void ASGameMode::PrepareForNextWave()
 {
 	
 	GetWorldTimerManager().SetTimer(TimerHandle_NextWaveStart, this, &ASGameMode::StartWave, 1.0f, false);
+
+	SetWaveState(EWaveState::WaitingToStart);
 }
 
 void ASGameMode::SpawnBotSequence()
@@ -94,21 +99,26 @@ void ASGameMode::CheckWaveState()
 	if (!bIsAnyBotsAlive)
 	{
 		PrepareForNextWave();
+
+		SetWaveState(EWaveState::WaveComplete);
 	}
 }
 
 void ASGameMode::GameOver()
 {
 	EndWave();
+	
+	SetWaveState(EWaveState::GameOver);
 }
 
-void ASGameMode::SetWaveState(EWaveState NewState)
+void ASGameMode::SetWaveState(EWaveState NewState) const
 {
 	ASGameState* GS = GetGameState<ASGameState>();
 	if (ensureAlways(GS))
 	{
-		GS->WaveState = NewState;
+		GS->StateChanged(NewState);
 	}
+	
 }
 
 void ASGameMode::CheckAnyPlayerAlive()
@@ -118,7 +128,7 @@ void ASGameMode::CheckAnyPlayerAlive()
 		APlayerController* PC = *It;
 		if (PC && PC->GetPawn())
 		{
-			APawn* MyPawn = PC->GetPawn();
+			const APawn* MyPawn = PC->GetPawn();
 			USHealthComponent* HealthComp = Cast<USHealthComponent>(MyPawn->GetComponentByClass(USHealthComponent::StaticClass())); 
 			if (ensure(HealthComp) && HealthComp->GetHealth() > 0.0f)
 			{

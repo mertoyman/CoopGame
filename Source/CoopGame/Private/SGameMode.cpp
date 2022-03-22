@@ -15,11 +15,20 @@ TimeBetweenWaves(10.0f)
 	PrimaryActorTick.TickInterval = 1.0f;
 }
 
+void ASGameMode::StartPlay()
+{
+	Super::StartPlay();
+
+	PrepareForNextWave();
+}
+
 void ASGameMode::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
 	CheckWaveState();
+
+	CheckAnyPlayerAlive();
 }
 
 void ASGameMode::StartWave()
@@ -85,10 +94,30 @@ void ASGameMode::CheckWaveState()
 	}
 }
 
-
-void ASGameMode::StartPlay()
+void ASGameMode::GameOver()
 {
-	Super::StartPlay();
-
-	PrepareForNextWave();
+	EndWave();
 }
+
+void ASGameMode::CheckAnyPlayerAlive()
+{
+	for (TActorIterator<APlayerController> It(GetWorld()); It; ++It)
+	{
+		APlayerController* PC = *It;
+		if (PC && PC->GetPawn())
+		{
+			APawn* MyPawn = PC->GetPawn();
+			USHealthComponent* HealthComp = Cast<USHealthComponent>(MyPawn->GetComponentByClass(USHealthComponent::StaticClass())); 
+			if (ensure(HealthComp) && HealthComp->GetHealth() > 0.0f)
+			{
+				// Player is still alive
+				return;
+			}
+		}
+	}
+
+	// Player is dead
+	GameOver();
+}
+
+

@@ -23,22 +23,22 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="HealthComponent")
-	float Health;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="HealthComponent")
-	float MaxHealth;
-
-private:
 	UFUNCTION(BlueprintCallable)
 	void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 	UFUNCTION(BlueprintCallable, Category="HealthComponent")
 	void Heal(float HealingAmount);
 	
-public:	
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="HealthComponent",meta=(AllowPrivateAccess=true))
+	float Health;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="HealthComponent",meta=(AllowPrivateAccess=true))
+	float MaxHealth;
+	
+public:	
 	UPROPERTY(BlueprintAssignable, Category= "Events")
 	FOnHealthChangedSignature OnHealthChanged;
 
+	FORCEINLINE float GetHealth() const { return Health; }
 };

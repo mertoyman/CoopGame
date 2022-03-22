@@ -16,7 +16,9 @@ class COOPGAME_API ASGameMode : public AGameModeBase
 
 public:
 	ASGameMode();
-
+	
+	virtual void StartPlay() override;
+	
 	virtual void Tick(float DeltaSeconds) override;
 	
 protected:
@@ -39,6 +41,10 @@ protected:
 
 	void CheckWaveState();
 
+	void CheckAnyPlayerAlive();
+
+	void GameOver();
+
 private:
 	
 	FTimerHandle TimerHandle_BotSpawner;
@@ -54,7 +60,4 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="GameMode")
 	float TimeBetweenWaves;
 
-public:
-	
-	virtual void StartPlay() override;
 };

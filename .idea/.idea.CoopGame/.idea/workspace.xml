@@ -7,12 +7,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_EQSTestingPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_EQSTestingPawn.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HealthIndicator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -302,7 +306,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="30676000" />
+      <workItem from="1647361077283" duration="36756000" />
     </task>
     <servers />
   </component>
@@ -315,17 +319,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../../../../../Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/Field.h</url>
-          <line>498</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

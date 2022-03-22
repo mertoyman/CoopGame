@@ -25,12 +25,12 @@ ExplosionTimerInSeconds(3.0f)
 	PrimaryActorTick.bCanEverTick = true;
 
 	MeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Comp"));
-	MeshComp->SetupAttachment(RootComponent);
+	RootComponent = MeshComp;
 	MeshComp->SetCanEverAffectNavigation(false);
 	MeshComp->SetSimulatePhysics(true);
 
 	SphereComp = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere Comp"));
-	SphereComp->SetupAttachment(RootComponent);
+	SphereComp->SetupAttachment(MeshComp);
 	SphereComp->SetSphereRadius(200);
 	SphereComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	SphereComp->SetCollisionResponseToAllChannels(ECR_Ignore);

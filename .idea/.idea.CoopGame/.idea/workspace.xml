@@ -6,16 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameState.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameState.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_EQSTestingPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_EQSTestingPawn.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EQS_FindSpawnLocation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_BotSpawns.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TrackerBot/BP_TrackerBot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" afterDir="false" />
     </list>
@@ -306,7 +299,7 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="36756000" />
+      <workItem from="1647361077283" duration="37384000" />
     </task>
     <servers />
   </component>

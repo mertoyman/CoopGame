@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "SGameState.h"
 #include "GameFramework/GameModeBase.h"
 #include "SGameMode.generated.h"
 
@@ -44,6 +45,8 @@ protected:
 	void CheckAnyPlayerAlive();
 
 	void GameOver();
+
+	void SetWaveState(EWaveState NewState);
 
 private:
 	

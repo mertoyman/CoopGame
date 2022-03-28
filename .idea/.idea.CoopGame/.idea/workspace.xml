@@ -7,6 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Blockout_P.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Blockout_P.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoopGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/CoopGame.uproject" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +300,9 @@
       <workItem from="1646668326482" duration="11539000" />
       <workItem from="1646989391467" duration="13998000" />
       <workItem from="1647353087977" duration="7456000" />
-      <workItem from="1647361077283" duration="43142000" />
+      <workItem from="1647361077283" duration="45889000" />
+      <workItem from="1648030535936" duration="638000" />
+      <workItem from="1648455808037" duration="1785000" />
     </task>
     <servers />
   </component>

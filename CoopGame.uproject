@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.26",
+	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -31,6 +31,11 @@
 				"Win64",
 				"Linux"
 			]
+		},
+		{
+			"Name": "Etherlinker",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e029bbf9d6b04f95b9d9ef52e3934be5"
 		}
 	]
 }

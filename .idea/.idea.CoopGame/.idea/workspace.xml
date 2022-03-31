@@ -6,12 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/AI/BTTask_AttackTarget.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AmmoType.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Blockout_P.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Blockout_P.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Powerups/BP_PickupTest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoopGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/CoopGame.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BB_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BTService_SelectTargetActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTService_SelectTargetActor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AnimStarterPack/Ue4ASP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AnimStarterPack/Ue4ASP_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Decorator_DistanceTo.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_TargetPlayer.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +42,16 @@
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/SGrenadeLauncher.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/SCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SGrenadeLauncher.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SWeapon.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SWeapon_Instant.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AItem.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/AItem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/Components/SHealthComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AmmoType.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/SWeapon_Instant.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +83,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="do_not_show_solution_notification" value="true" />
     <property name="settings.editor.selected.configurable" value="SymbolServersPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -302,7 +318,10 @@
       <workItem from="1647353087977" duration="7456000" />
       <workItem from="1647361077283" duration="45889000" />
       <workItem from="1648030535936" duration="638000" />
-      <workItem from="1648455808037" duration="1785000" />
+      <workItem from="1648455808037" duration="2509000" />
+      <workItem from="1648560389592" duration="7139000" />
+      <workItem from="1648728748643" duration="124000" />
+      <workItem from="1648728895012" duration="354000" />
     </task>
     <servers />
   </component>
@@ -312,6 +331,18 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

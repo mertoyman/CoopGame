@@ -54,8 +54,10 @@ protected:
 
 	void OnStopTargeting();
 
+	UFUNCTION(BlueprintCallable)
 	void StartWeaponFire();
-	
+
+	UFUNCTION(BlueprintCallable)
 	void StopWeaponFire();
 
 	void SwitchFireMode();

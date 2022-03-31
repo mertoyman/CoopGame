@@ -6,9 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/AI/BP_Rifle_AI.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Private/SWeapon_Instant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Private/SWeapon_Instant.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SWeapon_Instant.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SWeapon_Instant.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +308,7 @@
       <workItem from="1648455808037" duration="2509000" />
       <workItem from="1648560389592" duration="7139000" />
       <workItem from="1648728748643" duration="124000" />
-      <workItem from="1648728895012" duration="2045000" />
+      <workItem from="1648728895012" duration="3563000" />
     </task>
     <servers />
   </component>

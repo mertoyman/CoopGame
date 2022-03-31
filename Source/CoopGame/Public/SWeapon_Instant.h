@@ -74,7 +74,7 @@ protected:
 
 	float LastFireTime;
 
-	//Derived from RateOfFire
+	/* Derived from RateOfFire */
 	float TimeBetweenShots;
 
 	UPROPERTY(EditDefaultsOnly, Category="Config")
@@ -85,6 +85,10 @@ protected:
 	uint8 IsSingleFire : 1;
 
 	uint8 IsBurstFire : 1;
+
+	/* Bullet Spread in Degrees */
+	UPROPERTY(EditDefaultsOnly, Category="Weapon", meta=(ClampMin=0.f))
+	int BulletSpread;
 
 	virtual void Fire() override;
 

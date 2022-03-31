@@ -10,6 +10,7 @@
 
 ASWeapon_Instant::ASWeapon_Instant()
 {
+	BulletSpread = 2.f;
 	TimeBetweenShots = 60 / InstantConfig.RateOfFire;
 }
 
@@ -94,8 +95,13 @@ void ASWeapon_Instant::StartFiring()
 		FRotator EyeRotation;
 		MyOwner->GetActorEyesViewPoint(EyeLocation, EyeRotation);
 		
-		const FVector ShotDirection = -EyeRotation.Vector();
-		const FVector TraceEnd = EyeLocation + (EyeRotation.Vector() * InstantConfig.WeaponRange);
+		FVector ShotDirection = EyeRotation.Vector();
+
+		// Bullet Spread
+		const float HalfRadian = FMath::DegreesToRadians(BulletSpread);
+		ShotDirection = FMath::VRandCone(ShotDirection, HalfRadian);
+		
+		const FVector TraceEnd = EyeLocation + (ShotDirection * InstantConfig.WeaponRange);
 
 		FHitResult Impact;
 		const bool IsHit = WeaponTrace(Impact, EyeLocation, TraceEnd);

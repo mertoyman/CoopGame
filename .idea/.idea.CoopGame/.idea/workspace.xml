@@ -6,19 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e398877f-f119-41f4-b184-07080b3b67eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/AI/BTTask_AttackTarget.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/CoopGame/Public/AmmoType.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BB_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BB_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTService_SelectTargetActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTService_SelectTargetActor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AnimStarterPack/Ue4ASP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AnimStarterPack/Ue4ASP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Decorator_DistanceTo.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/EnvQueryContext_TargetPlayer.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/ABP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequin/BP_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" afterDir="false" />
     </list>
@@ -45,12 +33,9 @@
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SGrenadeLauncher.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SWeapon.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SWeapon_Instant.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AItem.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/AItem.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/SGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/Components/SHealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/Components/SHealthComponent.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AmmoType.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/SGameMode.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Public/AI/STrackerBot.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/CoopGame/Private/AI/STrackerBot.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -321,7 +306,7 @@
       <workItem from="1648455808037" duration="2509000" />
       <workItem from="1648560389592" duration="7139000" />
       <workItem from="1648728748643" duration="124000" />
-      <workItem from="1648728895012" duration="354000" />
+      <workItem from="1648728895012" duration="2045000" />
     </task>
     <servers />
   </component>

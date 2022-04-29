@@ -5,14 +5,14 @@
 	"FriendlyName": "Modular Gameplay Actors",
 	"Description": "Base classes designed to be used with the Modular Gameplay plugin.",
 	"Category": "Gameplay",
-	"CreatedBy": "",
-	"CreatedByURL": "",
+	"CreatedBy": "Epic Games, Inc.",
+	"CreatedByURL": "http://epicgames.com",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"CanContainContent": true,
+	"EnabledByDefault": true,
+	"CanContainContent": false,
 	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
 	"Installed": false,
 	"Modules": [
 		{

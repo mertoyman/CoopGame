@@ -1,24 +1,23 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
-
-#include "ModularAIController.h"
+#include "ModularPawn.h"
 #include "Components/GameFrameworkComponentManager.h"
 
-void AModularAIController::PreInitializeComponents()
+void AModularPawn::PreInitializeComponents()
 {
 	Super::PreInitializeComponents();
 
 	UGameFrameworkComponentManager::AddGameFrameworkComponentReceiver(this);
 }
 
-void AModularAIController::BeginPlay()
+void AModularPawn::BeginPlay()
 {
 	UGameFrameworkComponentManager::SendGameFrameworkComponentExtensionEvent(this, UGameFrameworkComponentManager::NAME_GameActorReady);
-	
+
 	Super::BeginPlay();
 }
 
-void AModularAIController::EndPlay(const EEndPlayReason::Type EndPlayReason)
+void AModularPawn::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	UGameFrameworkComponentManager::RemoveGameFrameworkComponentReceiver(this);
 

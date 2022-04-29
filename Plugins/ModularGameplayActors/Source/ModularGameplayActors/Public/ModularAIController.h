@@ -1,21 +1,20 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
-#include "ModularPawn.generated.h"
+#include "AIController.h"
+#include "ModularAIController.generated.h"
 
 /** Minimal class that supports extension by game feature plugins */
 UCLASS(Blueprintable)
-class MODULARGAMEPLAYACTORS_API AModularPawn : public APawn
+class MODULARGAMEPLAYACTORS_API AModularAIController : public AAIController
 {
 	GENERATED_BODY()
 
 public:
-	//~ Begin AActor interface
+	//~ Begin AActor Interface
 	virtual void PreInitializeComponents() override;
 	virtual void BeginPlay() override;
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
-	//~ End AActor interface
+	//~ End AActor Interface
 };

@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -19,7 +19,7 @@ public:
 	virtual void Reset() override;
 	//~ End AActor interface
 
-	protected:
+protected:
 	//~ Begin APlayerState interface
 	virtual void CopyProperties(APlayerState* PlayerState);
 	//~ End APlayerState interface

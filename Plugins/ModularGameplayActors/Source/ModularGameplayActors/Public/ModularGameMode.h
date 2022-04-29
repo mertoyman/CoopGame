@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -10,10 +10,9 @@ UCLASS(Blueprintable)
 class MODULARGAMEPLAYACTORS_API AModularGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
 public:
 	AModularGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
-	
 };
 
 /** Pair this with a ModularGameState */

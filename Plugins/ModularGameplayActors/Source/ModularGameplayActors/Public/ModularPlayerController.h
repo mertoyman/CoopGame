@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -10,7 +10,7 @@ UCLASS(Blueprintable)
 class MODULARGAMEPLAYACTORS_API AModularPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
 public:
 	//~ Begin AActor interface
 	virtual void PreInitializeComponents() override;

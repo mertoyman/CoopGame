@@ -1,8 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "GameFramework/GameState.h"
 #include "ModularGameState.generated.h"
 
@@ -20,6 +19,7 @@ public:
 	//~ End AActor interface
 };
 
+
 /** Pair this with a ModularGameState */
 UCLASS(Blueprintable)
 class MODULARGAMEPLAYACTORS_API AModularGameState : public AGameState
@@ -33,7 +33,7 @@ public:
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	//~ End AActor interface
 
-	protected:
+protected:
 	//~ Begin AGameState interface
 	virtual void HandleMatchHasStarted() override;
 	//~ Begin AGameState interface

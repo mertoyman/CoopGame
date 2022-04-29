@@ -1,9 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ModularCharacter.h"
 #include "Components/GameFrameworkComponentManager.h"
-
 
 void AModularCharacter::PreInitializeComponents()
 {
@@ -12,20 +10,16 @@ void AModularCharacter::PreInitializeComponents()
 	UGameFrameworkComponentManager::AddGameFrameworkComponentReceiver(this);
 }
 
-// Called when the game starts or when spawned
 void AModularCharacter::BeginPlay()
 {
 	UGameFrameworkComponentManager::SendGameFrameworkComponentExtensionEvent(this, UGameFrameworkComponentManager::NAME_GameActorReady);
-	
+
 	Super::BeginPlay();
 }
 
 void AModularCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	UGameFrameworkComponentManager::RemoveGameFrameworkComponentReceiver(this);
-	
+
 	Super::EndPlay(EndPlayReason);
 }
-
-
-

@@ -5,8 +5,18 @@
     <projectFile>Intermediate/ProjectFiles/UE5.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ba4d4c-2f35-4051-86e1-c051daf3ffc0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Public/CommonPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Public/CommonPlayerController.h" afterDir="false" />
+    <list default="true" id="c403397a-0bac-44ea-a450-b94246b01b68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Plugins/CommonUser/Source/CommonUser/Public/CommonUserTypes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoopGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/EQS_FindMoveTo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_TestGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Heroes/Mannequins/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Heroes/Mannequins/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoopGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/CoopGame.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/CoopGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/CoopGame.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoopGame/Public/SCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +27,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Private/CommonLocalPlayer.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Private/CommonPlayerController.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Public/CommonLocalPlayer.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Public/CommonPlayerController.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Private/CommonGameInstance.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/CommonGame/Source/CommonGame/Public/CommonGameInstance.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Plugins/CommonUser/Source/CommonUser/Public/CommonUserTypes.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28W40YHXIYgb1nK7Se1IcQlTvu8" />
+  <component name="ProjectId" id="29TGwmcJCA4Wf50eNhcCN3sZuAG" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,8 +44,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="RunManager" selected="C++ Project.CoopGame">

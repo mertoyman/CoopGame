@@ -2,6 +2,9 @@
 
 
 #include "CommonLocalPlayer.h"
+#include "GameUIManagerSubsystem.h"
+#include "GameUIPolicy.h"
+#include "GameFramework/PlayerController.h"
 
 UCommonLocalPlayer::UCommonLocalPlayer()
 	: Super(FObjectInitializer::Get())
@@ -57,6 +60,13 @@ bool UCommonLocalPlayer::GetProjectionData(FViewport* Viewport, FSceneViewProjec
 
 UPrimaryGameLayout* UCommonLocalPlayer::GetRootUILayout() const
 {
-	//TODO: Implement primary game UI layout of your gamw.
+	if (UGameUIManagerSubsystem* UIManager = GetGameInstance()->GetSubsystem<UGameUIManagerSubsystem>())
+	{
+		if (UGameUIPolicy* Policy = UIManager->GetCurrentUIPolicy())
+		{
+			return Policy->GetRootLayout(this);
+		}
+	}
+
 	return nullptr;
 }

@@ -20,6 +20,7 @@ public class CommonGame : ModuleRules
 				"UMG",
 				"CommonInput",
 				"CommonUI",
+				"CommonUser",
 				"GameplayTags",
 				"ModularGameplayActors",
 			}
@@ -29,6 +30,7 @@ public class CommonGame : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
+			
 			}
 		);
 		

@@ -10,6 +10,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Player/SPlayerController.h"
 
 // Sets default values
 ASCharacter::ASCharacter()
@@ -33,6 +34,11 @@ ASCharacter::ASCharacter()
 	bIsTargeting = false;
 	
 	SocketName = "WeaponSocket";
+}
+
+ASPlayerController* ASCharacter::GetSPLayerController() const
+{
+	return CastChecked<ASPlayerController>(Controller, ECastCheckedType::NullAllowed);
 }
 
 // Called when the game starts or when spawned

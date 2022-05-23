@@ -3,17 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
+#include "ModularCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "Components/SHealthComponent.h"
 #include "GameFramework/Character.h"
 #include "SCharacter.generated.h"
 
+class ASPlayerController;
 class ASWeapon;
 class USHealthComponent;
 
-UCLASS()
-class COOPGAME_API ASCharacter : public ACharacter
+UCLASS(Config=Game, meta=(ShortTooltip="The base character pawn class used by this project."))
+class COOPGAME_API ASCharacter : public AModularCharacter
 {
 	GENERATED_BODY()
 
@@ -21,14 +22,22 @@ public:
 	// Sets default values for this character's properties
 	ASCharacter();
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	UFUNCTION(BlueprintCallable, Category="Character")
+	ASPlayerController* GetSPLayerController() const;
 
+#pragma region AActor Interface
+	virtual void PreInitializeComponents() override;
+	virtual void BeginPlay() override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+	virtual void Reset() override;
+#pragma endregion
+	
 	UUserWidget* CrosshairWidget;
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintCallable)
 	void MoveForward(float Value);

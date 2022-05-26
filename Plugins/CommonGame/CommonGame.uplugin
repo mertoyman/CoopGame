@@ -27,6 +27,10 @@
 			"Enabled": true
 		},
 		{
+			"Name": "CommonUser",
+			"Enabled": true
+		},
+		{
 			"Name": "ModularGameplayActors",
 			"Enabled": true
 		},

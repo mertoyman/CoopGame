@@ -30,7 +30,6 @@ class COOPGAME_API USPawnComponent : public UPawnComponent, public ISReadyInterf
 	GENERATED_BODY()
 
 public:
-
 	USPawnComponent(const FObjectInitializer& ObjectInitializer);
 
 	virtual bool IsPawnComponentReadyToInitialize() const override { return true; }

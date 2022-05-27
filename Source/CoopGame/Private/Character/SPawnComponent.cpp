@@ -6,6 +6,6 @@
 USPawnComponent::USPawnComponent(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	PrimaryComponentTick.bStartWithTickEnabled(false);
-	PrimaryComponentTick.bCanEverTick(false);
+	PrimaryComponentTick.bStartWithTickEnabled = false;
+	PrimaryComponentTick.bCanEverTick = false;
 }

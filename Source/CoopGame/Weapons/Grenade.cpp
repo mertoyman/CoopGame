@@ -6,7 +6,7 @@
 #include "Components/SphereComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "CoopGame/CoopGame.h"
-#include "CoopGame/Interaction/SExplosionEffect.h"
+#include "CoopGame/Interactable/SExplosionEffect.h"
 #include "Kismet/GameplayStatics.h"
 
 
